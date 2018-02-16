@@ -1,0 +1,43 @@
+total 1282388
+drwxrwxr-x 4 csl336 csl336       4096 Aug 23 09:06 .
+drwxr-xr-x 5 csl336 csl336       4096 Aug 24 11:21 ..
+drwxrwxr-x 2 csl336 csl336        104 Aug 22 11:26 datfiles
+-rw-rw-r-- 1 csl336 csl336   68677242 Aug 16 12:02 nbody_1M
+-rw-rw-r-- 1 csl336 csl336   28000152 Aug 16 12:02 nbody_1M.nb
+-rw-rw-r-- 1 csl336 csl336    3083725 Aug 16 12:02 orbitscell
+-rw-rw-r-- 1 csl336 csl336   12160000 Aug 16 12:02 orbitscell.ocw
+-rw-rw-r-- 1 csl336 csl336 1200040000 Aug 16 12:02 orbitscell.sam
+-rw-rw-r-- 1 csl336 csl336      50801 Aug 16 11:45 potential
+-rw-rw-r-- 1 csl336 csl336       7659 Aug 16 11:45 potential.coef
+-rw-rw-r-- 1 csl336 csl336     168618 Aug 22 09:40 Profiles_Temp_1.png
+-rw-rw-r-- 1 csl336 csl336     164196 Aug 22 11:26 Profiles_Temp_2.png
+-rw-rw-r-- 1 csl336 csl336     191287 Aug 23 08:58 Profiles_Temp_Full2_2Gy.png
+-rw-rw-r-- 1 csl336 csl336     181763 Aug 22 12:45 Profiles_Temp_Full2_3.png
+-rw-rw-r-- 1 csl336 csl336     186885 Aug 23 09:06 Profiles_Temp_Full3_2Gy.png
+-rw-rw-r-- 1 csl336 csl336     183186 Aug 22 12:45 Profiles_Temp_Full3_2.png
+-rw-rw-r-- 1 csl336 csl336        190 Aug 16 11:43 script_file
+-rw-rw-r-- 1 csl336 csl336        207 Aug 16 11:44 smilebatch
+-rw-r--r-- 1 csl336 csl336        912 Aug 16 11:44 smile.ini
+-rw-rw-r-- 1 csl336 csl336      16159 Aug 16 12:06 smile.out
+drwxrwxr-x 3 csl336 csl336       4096 Aug 22 19:37 snapshots
+SMILE console version 2.0  build Aug 16 2012
+> Loaded config from test2/smile.ini
+> 10000 orbits loaded
+Preparing model..
+> 10000 orbits out of 10000 with nonzero weights
+Total weight: 1.00001
+19.2% orbits make up 50% total mass (fair)
+entropy: -0.534 (fair)
+Max/avg weight: 85.9 (poor)
+Model is feasible
+> Starting integration..
+Reintegrating 5 orbits..
+Exporting Nbody model..
+1000000 points created
+1.00001 total mass
+10000 orbits used
+max 8589 sampling points per orbit
+Avg.X=0.0357 (0.00205)
+Avg.V=0.000192 (5.9e-05) [cancelled]
+Avg.L=3.51e-07 (7.61e-07)
+Computing virial ratio...

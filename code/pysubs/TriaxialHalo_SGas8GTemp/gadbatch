@@ -1,0 +1,8 @@
+#!/bin/sh
+#PBS -l mem=8000mb
+#PBS -l nodes=1:ppn=2
+#PBS -N csl336_job
+#PBS -M csl336
+#PBS -m ae
+cd /export/ursa1/csl336/Research/bullet/code/TriaxialHalo_SGas4
+mpiexec -np 2 /export/ursa1/csl336/Software/Gadget3/P-Gadget3/P-Gadget3 collision.param 

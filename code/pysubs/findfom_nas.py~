@@ -1,0 +1,71 @@
+#!/usr/bin/env python
+
+#Author: Craig Lage, NYU; 
+#Date: 27-Mar-12
+
+
+#This is a standalone python program to run findfom in batch mode
+
+import lageconfig # system specific path information
+import sys
+import matplotlib
+matplotlib.use("PDF")
+sys.path.append(lageconfig.bulletpath)
+import pysubs_nas_18Sep12 as pysubs
+import time
+
+
+#****************MAIN PROGRAM*****************
+
+cmd=sys.argv
+phi = 0.0
+theta=0.0
+snapmin=int(cmd[1])
+snapmax=int(cmd[2])
+Z=float(cmd[3])
+psi=float(cmd[4])
+ConstrainPhi=cmd[5]
+if ConstrainPhi in ['True','true','T','t','1']:
+    ConstrainPhi = True
+else:
+    ConstrainPhi = False
+
+PlotSuffix = 'Mass'
+Mask=(1,0,0,0,0,0)
+
+start = time.time()
+(fom,snap,psi,theta,simtime,counter) = pysubs.FindFom(snapmin,snapmax,Z,phi,theta,psi,ConstrainPhi=ConstrainPhi,Mask=Mask)
+	
+result="FOM=%.6f, BestSnap = %d, BestTime =  %.4f, BestPsi = %.3f, BestTheta = %.3f\n"%(fom,snap,simtime,psi,theta)
+
+elapsed = time.time()-start
+print result
+print "Elapsed time = %.2f"%elapsed
+
+pysubs.BestPlot(snap,Z,phi=phi,theta=theta,psi=psi,PlotSuffix=PlotSuffix,FomLocate=True,ConstrainPhi=ConstrainPhi,Mask=Mask)
+
+fomfile=open('newfom_mass.out','w')
+fomfile.write(result)
+fomfile.close
+
+theta=0.0
+PlotSuffix = 'MassX1'
+Mask=(1,1,0,0,0,0)
+
+start = time.time()
+(fom,snap,psi,theta,simtime,counter) = pysubs.FindFom(snapmin,snapmax,Z,phi,theta,psi,ConstrainPhi=ConstrainPhi,Mask=Mask)
+	
+result="FOM=%.6f, BestSnap = %d, BestTime =  %.4f, BestPsi = %.3f, BestTheta = %.3f\n"%(fom,snap,simtime,psi,theta)
+
+elapsed = time.time()-start
+print result
+print "Elapsed time = %.2f"%elapsed
+
+pysubs.BestPlot(snap,Z,phi=phi,theta=theta,psi=psi,PlotSuffix=PlotSuffix,FomLocate=True,ConstrainPhi=ConstrainPhi,Mask=Mask)
+
+fomfile=open('newfom_massx1.out','w')
+fomfile.write(result)
+fomfile.close
+
+#************END MAIN PROGRAM*************************
+

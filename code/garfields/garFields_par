@@ -1,0 +1,20 @@
+#------------------------------------------------------------------------------
+# GARFIELDS: GAUssian Random FIELDS Generator: Numerical settings 
+#------------------------------------------------------------------------------
+out_file = velocity_field_128_128_128.dat # Output name for the magnetic field
+#------------------------------------------------------------------------------
+Nx = 128		# Number of pixels x 
+Ny = 128		# Number of pixels y 
+Nz = 128		# Number of pixels z 
+#------------------------------------------------------------------------------
+seed = 32 	        # Seed for the random generator
+#------------------------------------------------------------------------------
+PowIndex = 1.67	        # power-law index for the power-spectrum (default: 5/3)
+kmin     = 0            # kmin=2pi/Lmax (0=default: Lmax=L Box length, <0: kmin = kmax/(-kmin))        
+kmax     = 0            # kmax (0=default: kmax=kNyquist=2pi/L*N/2)
+Bvar     = 1.0          # <B^2> (0=default: <B^2>=6 microGauss)
+#------------------------------------------------------------------------------
+clean_div = false        # Divergence free (false=off/true=on)     
+#------------------------------------------------------------------------------
+alpha = 0               # Helicity strength (0=off, 1=maximum)
+#------------------------------------------------------------------------------
