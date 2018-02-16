@@ -45,3 +45,5 @@ nbodym.dat
 main.dat
 collision.dat
 The entire directory DD0000
+
+***SECOND ADDENDUM***  After I completed the two papers in the docs directory, and before I completed my PhD, I wrote the code in the code/halo_builder directory.  This code dispenses with many of the steps in the complicated sequence outlined above.  You still need to run smile to generate the nbody.dat files, but then the halo_builder code does all of the remaining steps, including translating the input halos, adding the gas, and generating the magnetic field. It then outputs the Enzo initial condition files directly, without the intermediate step of generating Gadget files.  It is also capable of combining more than two clusters.  The running of the code is controlled by the .cfg files in code/halo_builder.  If you are embarking on running a new set of simulations using Enzo, you might consider using this code as a starting point.
