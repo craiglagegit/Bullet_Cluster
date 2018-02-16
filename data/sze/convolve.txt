@@ -1,0 +1,26 @@
+>>> from pylab import *
+>>> import pyfits
+>>> from scipy.ndimage import convolve
+>>> d1=pyfits.open("bullet_map.fits")
+>>> d1
+[<pyfits.core.PrimaryHDU object at 0x98c64cc>]
+>>> data=d1[0].data
+>>> data
+array([[ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       ..., 
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.]], dtype=float32)
+>>> d2=pyfits.open("bullet_transfer.fits")
+>>> kernel=d2[0].data
+>>> contourf(kernel)
+<matplotlib.contour.QuadContourSet instance at 0x98cba4c>
+>>> show()
+>>> contourf(data)
+<matplotlib.contour.QuadContourSet instance at 0x9a18b8c>
+>>> show()
+>>> newdata=convolve(data,kernel)
+Segmentation fault
+

@@ -1,0 +1,6 @@
+ReadIni("smilem.ini")
+ExportPotential("potentialm.dat")
+SchwBuildOrbitLibrary
+SchwQuadraticOptimization
+ExportNbody(1000000,"nbodym.dat")
+Exit

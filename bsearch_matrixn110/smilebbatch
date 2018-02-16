@@ -1,0 +1,96 @@
+#PBS -S /bin/csh
+#PBS -l select=48:ncpus=12:model=wes 
+#PBS -l walltime=2:00:00
+#PBS -j oe
+#PBS -o /nobackup/clage/my_pbs_output
+#PBS -m e
+
+seq 48 | parallel -j 1 -u --sshloginfile $PBS_NODEFILE\
+    "cd /u/clage/Research/bullet/code/enzo/batch_matrixn58 ;./smilebscript.csh {};"  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

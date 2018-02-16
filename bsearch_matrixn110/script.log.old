@@ -1,0 +1,18 @@
+Counter=0 C1=1.1672 C2=5.45 M1=190645.0 M2=25936.0 RC1=69.96 RC2=45.42 Beta1=0.325 Beta2=0.9038 Alpha1=0.3932 Alpha2=0.3265 Epsilon1=0.0 Epsilon2=0.0 Rs1=35.27 Rs2=45.25 Beta21=0.8359 Beta22=0.4736 RC21=638.8 RC22=491.15 N21=0.0 N22=0.0 GF1=0.18 GF2=0.18 Z=0.7853 Mag=40.0 FieldMode=RandomRadial Tbg=4.0 LogRhoMin=-7.3 IP=256.1 IPPhi=139.01 IPTheta=98.07 IPPsi=13.98 Vinc=0.9626 P1=0.3559 Q1=0.6853 P2=0.6156 Q2=0.6832 Phi1=184.65 Theta1=38.45 Psi1=221.33 Phi2=164.54 Theta2=100.26 Psi2=64.68 Visc=0.0 TFudge=0.49 
+BestChi2 = 5.3430
+
+Parameter = RC1, gradplus = -0.6, gradminus = 1.7, grad = 0.54
+Parameter = RC2, gradplus = -0.3, gradminus = 0.77, grad = 0.24
+Parameter = Beta1, gradplus = 0.85, gradminus = 3, grad = 1.9
+Parameter = Beta2, gradplus = -1.8, gradminus = 1, grad = -0.38
+Parameter = Alpha1, gradplus = -1.2, gradminus = 1.2, grad = -0.013
+Parameter = Alpha2, gradplus = -1.3, gradminus = 0.91, grad = -0.21
+Parameter = Rs1, gradplus = -2.3, gradminus = 1.9, grad = -0.22
+Parameter = Rs2, gradplus = -1.2, gradminus = 0.92, grad = -0.15
+Parameter = Beta21, gradplus = 11, gradminus = 9, grad = 10
+Parameter = Beta22, gradplus = -0.81, gradminus = 1.7, grad = 0.46
+Parameter = RC21, gradplus = -3.5, gradminus = -1.7, grad = -2.6
+Parameter = RC22, gradplus = -0.13, gradminus = -0.062, grad = -0.098
+Parameter = GF1, gradplus = 8, gradminus = 5.9, grad = 7
+Parameter = GF2, gradplus = 7.4, gradminus = 7.8, grad = 7.6
+Parameter = Mag, gradplus = -0.15, gradminus = -2.1, grad = -1.1

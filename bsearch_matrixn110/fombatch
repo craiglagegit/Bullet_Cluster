@@ -1,0 +1,11 @@
+#PBS -S /bin/csh
+#PBS -l select=6:ncpus=6:model=wes 
+#PBS -l walltime=2:00:00
+#PBS -j oe
+#PBS -o /nobackup/clage/my_pbs_output
+#PBS -m e
+module load mpi-mvapich2/1.4.1/intel
+
+cd /u/clage/Research/bullet/code/enzo/bsearch_matrixn110 
+
+mpiexec -comm none -np 32 fomscript.csh 0 
